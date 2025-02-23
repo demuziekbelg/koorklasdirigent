@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koorklas Dirigent</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include Howler.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Koorklas Dirigent</h1>
+    <div class="tracks">
+      <!-- Track 1 -->
+      <div class="track" id="track1" onclick="toggleMute(0)">
+        <img src="images/bas.jpeg" alt="Track 1">
+      </div>
+      <!-- Track 2 -->
+      <div class="track" id="track2" onclick="toggleMute(1)">
+        <img src="images/tenor.jpeg" alt="Track 2">
+      </div>
+      <!-- Track 3 -->
+      <div class="track" id="track3" onclick="toggleMute(2)">
+        <img src="images/alt.jpeg" alt="Track 3">
+      </div>
+      <!-- Track 4 -->
+      <div class="track" id="track4" onclick="toggleMute(3)">
+        <img src="images/sopraan.png" alt="Track 4">
+      </div>
+    </div>
+
+    <!-- Play All and Stop All Buttons -->
+    <div class="controls">
+      <button id="playAll" onclick="playAll()">Play</button>
+      <button id="stopAll" onclick="stopAll()">Stop</button>
+    </div>
+  </div>
+
+  <script src="dirigent.js"></script>
+</body>
+</html>
